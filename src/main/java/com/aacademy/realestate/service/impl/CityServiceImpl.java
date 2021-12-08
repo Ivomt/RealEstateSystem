@@ -66,7 +66,6 @@ public class CityServiceImpl implements CityService {
 
     @Override
     public void detachCityNeighborhood(Long cityId, Set<Long> neighborhoodIds) {
-
         City foundCity = findById(cityId);
         foundCity.getNeighborhoods()
                 .removeIf(neighborhood -> neighborhoodIds.contains(neighborhood.getId()));
