@@ -18,4 +18,6 @@ public class CityDto {
     private String name;
 
     private Set<Long> neighborhoodIds;
+
+    private Set<NeighborhoodDto> neighborhoodDtos;
 }
