@@ -11,11 +11,19 @@ import java.util.Set;
 @NoArgsConstructor
 @Getter
 @Builder
-public class CityDto {
+public class EstateResponse {
 
     private Long id;
 
-    private String name;
+    private String builtUpArea;
 
-    private Set<Long> neighborhoodIds;
+    private String pureArea;
+
+    private String description;
+
+    private CityDto cityDto;
+
+    private FloorDto floorDto;
+
+    private Set<EstateFeatureDto> estateFeatureDtos;
 }

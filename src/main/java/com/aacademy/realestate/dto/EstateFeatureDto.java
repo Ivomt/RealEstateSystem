@@ -5,17 +5,13 @@ import lombok.Builder;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 
-import java.util.Set;
-
 @AllArgsConstructor
 @NoArgsConstructor
 @Getter
 @Builder
-public class CityDto {
+public class EstateFeatureDto {
 
     private Long id;
 
-    private String name;
-
-    private Set<Long> neighborhoodIds;
+    private String feature;
 }
