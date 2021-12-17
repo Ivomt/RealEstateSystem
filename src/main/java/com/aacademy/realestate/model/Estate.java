@@ -41,4 +41,7 @@ public class Estate {
             inverseJoinColumns = @JoinColumn(name = "estate_feature_id", referencedColumnName = "id")
     )
     private Set<EstateFeature> estateFeatures;
+
+    @OneToMany(mappedBy = "estate")
+    private Set<Image> images;
 }
