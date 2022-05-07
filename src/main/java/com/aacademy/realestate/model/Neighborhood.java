@@ -15,7 +15,7 @@ import java.util.Set;
 @Getter
 @Entity
 @Table(name = "neighborhoods")
-public class Neighborhood {
+public class    Neighborhood {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
